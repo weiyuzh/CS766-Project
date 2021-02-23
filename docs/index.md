@@ -1,8 +1,18 @@
 ## Page URL
 https://weiyuzh.github.io/CS766-Project/
 
-## Welcome to GitHub Pages
+## CS 766 Project: Cluster Analysis on Neural Cell Imaging
+Group Members:
+Nomin Khishigsuren
+Roy Sun
+Trevor Zachman-Brockmeyer
+Weiyu Zhang
 
+<PAGE IS WIP>
+  
+  
+  
+  
 You can use the [editor on GitHub](https://github.com/weiyuzh/CS766-Project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
