@@ -56,7 +56,6 @@ We can quantitatively measure the error of each method by seeing how many images
 Finally, if time permits, we could train a deep learning model on our images and compare the accuracy of the machine learning framework to our purely image processing based approach. The results of this accuracy comparison could give some insight into the advantages or disadvantages of extending our research into machine learning based detection models. 
 
 ## Timetable
-
 |Date|Milestone|
 |----|---------|
 |February 24|Initial proposal|
@@ -70,7 +69,8 @@ Finally, if time permits, we could train a deep learning model on our images and
 |April 23|Final presentation|
 
 ## Appendix
-
+![Fig 1. 2D slice of 3D image of neuronal cells showing cells in clusters](images/proposal_figure_1.png)
 Fig 1. 2D slice of 3D image of neuronal cells showing cells in clusters
 
+![Fig 2. The failure of QuPath software to detect and count the same cluster of cells](images/proposal_figure_2.png)
 Fig 2. The failure of QuPath software to detect and count the same cluster of cells
