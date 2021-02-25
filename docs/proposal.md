@@ -62,6 +62,7 @@ We can quantitatively measure the error of each method by seeing how many images
 Finally, if time permits, we could train a deep learning model on our images and compare the accuracy of the machine learning framework to our purely image processing based approach. The results of this accuracy comparison could give some insight into the advantages or disadvantages of extending our research into machine learning based detection models. 
 
 ## Timetable
+
 |Date|Milestone|
 |----|---------|
 |February 24|Initial proposal|
