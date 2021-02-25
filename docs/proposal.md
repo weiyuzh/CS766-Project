@@ -69,8 +69,8 @@ Finally, if time permits, we could train a deep learning model on our images and
 |April 23|Final presentation|
 
 ## Appendix
-![Fig 1. 2D slice of 3D image of neuronal cells showing cells in clusters](images/proposal_figure_1.png)
+![Fig 1. 2D slice of 3D image of neuronal cells showing cells in clusters](images/proposal_figure_1.PNG)
 Fig 1. 2D slice of 3D image of neuronal cells showing cells in clusters
 
-![Fig 2. The failure of QuPath software to detect and count the same cluster of cells](images/proposal_figure_2.png)
+![Fig 2. The failure of QuPath software to detect and count the same cluster of cells](images/proposal_figure_2.PNG)
 Fig 2. The failure of QuPath software to detect and count the same cluster of cells
