@@ -24,32 +24,28 @@ Fig 1. Sample image data for analysis that showcases the vertical alignments of 
 ## Current Progress
 Our plan was to find an existing solution that could be adapted and re-implemented for our analysis. After exploring many different softwares and libraries that are open-source and available to the public, we have decided to use CellProfiler, Python-based cell image analysis software. For our pre-processing of the images in our dataset, we used the following modules and pipeline: 
 
-1. Erosion: 
+**1. Erosion:** 
     The original sliced images have a large amount of background noise in the form of neural connections between individual clusters as well as tips of cells present in distant neighboring slices. In order to better analyze the clusters, this noise was removed using erosion. 
 
-    ![Fig 2a. Original image slice in our dataset.](images/midterm_figure_2a.png) ![Fig 2b. Better visualized clusters after erosion.](images/midterm_figure_2b.png)
-
+    ![Fig 2a. Original image slice in our dataset.](images/midterm_figure_2a.png) ![Fig 2b. Better visualized clusters after erosion.](images/midterm_figure_2b.png)  
     Fig 2. a: Original image slice in our dataset. b: Better visualized clusters after erosion.
 
-2. Identify Primary Objects: 
+**2. Identify Primary Objects:**
     Using CellProfiler’s IdentifyPrimaryObjects module, we were able to obtain cell structures within the neuronal clusters.
 
-    ![Fig 3a. Image showing after erosion.](images/midterm_figure_3a.png) ![Fig 3b. Image showing boundaries of the objects found by the software.](images/midterm_figure_3b.png)
-
+    ![Fig 3a. Image showing after erosion.](images/midterm_figure_3a.png) ![Fig 3b. Image showing boundaries of the objects found by the software.](images/midterm_figure_3b.png)  
     Fig 3. Images showing a: after erosion and b: boundaries of the objects found by the software.
 
-3. Filtering for Size: 
+**3. Filtering for Size:**
     The object detection process, while finding the correct cells within clusters, also detected small pixel noise that were remnants of the erosion modifications. In order to detect only the cells we are interested in, we ran our objects through a size filter, discarding any detected objects that were smaller than a specified threshold.
 
-    ![Fig 4a. Identified neuronal cells before being filtered.](images/midterm_figure_4a.png) ![Fig 4b. Identified neuronal cells after being filtered.](images/midterm_figure_4b.png)
-
+    ![Fig 4a. Identified neuronal cells before being filtered.](images/midterm_figure_4a.png) ![Fig 4b. Identified neuronal cells after being filtered.](images/midterm_figure_4b.png)  
     Fig 4. Identified neuronal cells (a) before and (b) after being filtered.
 
-4. Exporting relevant data for post-processing stitching process: 
+**4. Exporting relevant data for post-processing stitching process:**
     Each object that was not filtered out then had its center pixel location logged to a csv. The post-processing stitching process may also require other data on the objects such as size, orientation, or brightness, all of which we will be able to calculate if needed. 
 
-    ![Fig 5. Example data that is exported for detected objects after the pipeline.](images/midterm_figure_5.png)
-
+    ![Fig 5. Example data that is exported for detected objects after the pipeline.](images/midterm_figure_5.png)  
     Fig 5. Example data that is exported for detected objects after the pipeline.
 
 
