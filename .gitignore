@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Manual
+# Source images
+original-20210319T040855Z-001/*
