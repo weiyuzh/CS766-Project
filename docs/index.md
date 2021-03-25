@@ -10,3 +10,6 @@ Group Members:
 
 ## Proposal
 https://weiyuzh.github.io/CS766-Project/proposal.html
+
+## Midterm Report
+https://weiyuzh.github.io/CS766-Project/midterm.html
