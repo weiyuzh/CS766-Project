@@ -24,6 +24,9 @@ Cell detection and counting is fundamental in biomedical and cancer research and
 However, a great number of them still show limitations when it comes to analyzing a cluster of cells that are in close proximity and especially in 3D culture environments. So the main motivation behind our project was to come up with a method to an accurate measure of the number of cells in volumes and especially in clusters.  
 
 # Our Dataset
+The dataset we used for our project is a 3D volumetric image of neurons which is obtained by getting 2D images at different heights z. In this case, this image had 187 cross sectional 2D images that were stacked together.   
+<br>
+<img src="./images/dataset.png">
 
 # Method #1: The Graph-Cut Algorithm
 The first algorithm we explored was a graph-cut algorithm highlighted in a paper {1} from the 2012 IEEE conference. The main intuition is straightforward: cells typically exhibit an ellipsoid shape. We can exploit this pattern to guide our cut and at the same time help reduce computational complexity. The specific equation used is below. 
