@@ -26,13 +26,13 @@ To overcome these obstacles, a great number of methods and approaches have been 
 
 Due to the complexity of the cell structures in 3D *in-vitro* culture environments, multiple cells are found clustered into a single blob. A lot of tools don't segment these clusters correctly which leads to inaccurate cell counts. 
 
-<img src="./images/dataset.png"> 
+<img src="./images/imgg.png"> 
 
 - Using z-stacks to detect neighboring cells 
 
 Volumetric images are obtained by acquiring 2D images along the z-dimension or height of the sample. Using the information that the z-stacks provide, it is possible to determine vertically adjacent/neighboring images and infer additional information about each image (e.g. two disjoint but closeby cells in one image may appear as a single blob in the neighboring image). 
 
-<img src="./images/dataset.png">
+<img src="./images/z-stacks.png">
 
 As part of this project, we reviewed existing methods and explored image processing enhancements for cell detection, segmentation and counting. Our interest lied in the potential of developing a method that factors in the 3D nature of cells in the image processing and counting analysis. 
 
