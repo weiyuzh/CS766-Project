@@ -28,7 +28,7 @@ To overcome these obstacles, a great number of methods and approaches have been 
 
 Due to the complexity of the cell structures in 3D *in-vitro* culture environments, multiple cells are found clustered into a single blob. A lot of tools don't segment these clusters correctly which leads to inaccurate cell counts. 
 <p align="center">
-  <img width="460" height="300" src="./images/imgg.PNG">
+  <img src="./images/imgg.PNG">
 </p>
 
 - ### Using z-stacks to detect neighboring cells 
