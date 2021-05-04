@@ -84,7 +84,9 @@ CellProfiler is an image analysis software for identifying and quantifying cells
 
 # References
 1: [O'Brien J, Hayder H, Peng C. Automated Quantification and Analysis of Cell Counting Procedures Using ImageJ Plugins. J Vis Exp. 2016 Nov . doi:10.3791/54719. PMID: 27911396; PMCID: PMC5226253](http://europepmc.org/article/PMC/5226253).
+
 2: [1.Schmitz, C. et al. Current automated 3D cell detection methods are not a suitable replacement for manual stereologic cell counting. Frontiers in Neuroanatomy 8, 27 (2014)](https://www.frontiersin.org/articles/10.3389/fnana.2014.00027/full).
+
 3: [Carpenter, A.E., Jones, T.R., Lamprecht, M.R. et al. CellProfiler: image analysis software for identifying and quantifying cell phenotypes. Genome Biol 7, R100 (2006). https://doi.org/10.1186/gb-2006-7-10-r100](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2006-7-10-r100#citeas)
 
 https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.471.5473&rep=rep1&type=pdf
