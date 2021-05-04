@@ -30,7 +30,6 @@ Due to the complexity of the cell structures in 3D *in-vitro* culture environmen
 <p align="center">
   <img width="460" height="300" src="./images/imgg.PNG">
 </p>
-<img src="./images/imgg.PNG"> 
 
 - ### Using z-stacks to detect neighboring cells 
 
