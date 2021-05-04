@@ -68,9 +68,12 @@ CellProfiler is an image analysis software for identifying and quantifying cells
 - #### Provides flexible, open-source platform with easily adjustable modules and pipelines 
 - #### Measures and outputs the size, shape, intensity and texture of a variety of cell types. 
 
+<img src="./images/cellprofiler1.png">
 
+<img src="./images/cellprofiler2.png">
 
-
+<img src="./docs/csv_analysis/labeled6.gif">
+<img src="./docs/csv_analysis/labeled8.gif">
 
 # Method #3: Machine Learning
 
