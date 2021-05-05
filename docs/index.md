@@ -47,7 +47,7 @@ The dataset we used for our project is a 3D volumetric image of neurons which is
 <img src="./images/dataset.png">
 
 # Method #1: The Graph-Cut Algorithm
-The first algorithm we explored was a graph-cut algorithm highlighted in a paper {1} from the 2012 IEEE conference. The main intuition is straightforward: cells typically exhibit an ellipsoid shape. We can exploit this pattern to guide our cut and at the same time help reduce computational complexity. The specific equation used is below. 
+The first algorithm we explored was a graph-cut algorithm highlighted in a paper<sup>4</sup> from the 2012 IEEE conference. The main intuition is straightforward: cells typically exhibit an ellipsoid shape. We can exploit this pattern to guide our cut and at the same time help reduce computational complexity. The specific equation used is below. 
 <br>
 <img src="./images/graphcut/ellipsoid equation.png" width="600" height="35">
 
@@ -99,4 +99,4 @@ Overall, the customized Cell Profiler pipeline combined with 3-D Euclidean dista
 
 3: [Carpenter, A.E., Jones, T.R., Lamprecht, M.R. et al. CellProfiler: image analysis software for identifying and quantifying cell phenotypes. Genome Biol 7, R100 (2006). https://doi.org/10.1186/gb-2006-7-10-r100](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2006-7-10-r100#citeas)
 
-https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.471.5473&rep=rep1&type=pdf
+4: [Learning to Segment Dense Cell Nuclei with Shape Prior](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.471.5473&rep=rep1&type=pdf)
