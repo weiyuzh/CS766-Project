@@ -112,6 +112,7 @@ We then looked at if having vertical correlations (in the form of neighboring ho
 [Pipeline Config](https://github.com/weiyuzh/CS766-Project/tree/main/Machine%20Learning/Cell%20Counting%20Multichannel/checkpoint/new_config)
 [Checkpoint Restore](https://github.com/weiyuzh/CS766-Project/tree/main/Machine%20Learning/Cell%20Counting%20Multichannel/checkpoint)
 
+Qualitatively, the multichannel model converged with less training and was generally able to detect overlapping cells better than the grayscale model.
 
 # Comparison
 <img src="./images/comparison.png">
