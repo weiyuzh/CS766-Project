@@ -90,8 +90,8 @@ Overall, the customized Cell Profiler pipeline combined with 3-D Euclidean dista
 ## Grayscale
 In addition to the above methods, we briefly investigated identifying cells using convolutional neural networks. We started simple, with 18 manually labelled images as the training data set and a ResNet-50 pipeline. Using TensorFlow and Google Colab, we first trained our model using grayscale images and evaluated our model against the full sample dataset. Shown below are all cells that were detected with > 50% confidence.
 
-<img src="./images/resnet_grayscale_frame_047.jpg">
-<img src="./images/cells_1D.gif">
+<img src="./images/resnet_grayscale_frame_047.jpg" width="600" height="600">
+<img src="./images/cells_1D.gif" width="600" height="600">
 
 [Notebook](https://github.com/weiyuzh/CS766-Project/blob/main/Machine%20Learning/Cell%20Counting%20Grayscale/Cell%20Counting%20Grayscale.ipynb) <br>
 [Pickled Training Data Bounding Boxes (Every 10th Image)](https://github.com/weiyuzh/CS766-Project/blob/main/Machine%20Learning/Cell%20Counting%20Grayscale/gt_boxes_nomin) <br>
@@ -103,8 +103,8 @@ In addition to the above methods, we briefly investigated identifying cells usin
 
 We then looked at if having vertical correlations (in the form of neighboring horizontal slices) would impact predictions made by a ResNet-50 pipeline. We took three consecutive images and combined them into one multichannel composite (each channel is represented as Red/Green/Blue channels in visualizations) and trained another ResNet-50 pipeline using similar manually labelled images. Shown below are all cells that were detected with > 50% confidence.
 
-<img src="./images/resnet_multichannel_frame_046.jpg">
-<img src="./images/cells_3D.gif">
+<img src="./images/resnet_multichannel_frame_046.jpg"  width="600" height="600">
+<img src="./images/cells_3D.gif"  width="600" height="600">
 
 [Notebook](https://github.com/weiyuzh/CS766-Project/blob/main/Machine%20Learning/Cell%20Counting%20Multichannel/Cell%20Counting%20Multichannel.ipynb) <br>
 [Pickled Training Data Bounding Boxes (Every 10th Image)](https://github.com/weiyuzh/CS766-Project/blob/main/Machine%20Learning/Cell%20Counting%20Multichannel/gt_boxes_nomin) <br>
