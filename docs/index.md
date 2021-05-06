@@ -128,12 +128,17 @@ Looking at the table, we can see that the CellProfiler overcounted in both cases
 
 Although we were able to get a cell count with ResNet for 2D slice image, and modified CellProfiler method for both 2D slice and 3D image, it was still pretty inaccurate possibly due to a number of reasons which we think can be further improved. 
 
-First of all, we noticed the tendency for the Watershed algorithm to over-segment cell clusters and we think we can improve this by optimizing the parameters of the algorithm.
-Secondly, to better incorporate neighboring slices to the cell count, optimizing the thresholds and parameters for the 3D Euclidean distance is optimal. For Resnet specifically, we think we can achieve ground truth accuracy with more training image datasets and similarly for CellProfiler, as using more image datasets could help improve fine-tuning the values for the parameters that give higher cell count accuracy. 
 
 - Fine-tuning and optimizing parameters of the CellProfiler Watershed algorithm
 - Optimizing thresholds for 3D Euclidean distance calculations
 - Training and evaluating methods with larger image datasets 
+
+
+First of all, we noticed the tendency for the Watershed algorithm to over-segment cell clusters and we think we can improve this by optimizing the parameters of the algorithm.
+Secondly, to better incorporate neighboring slices to the cell count, optimizing the thresholds and parameters for the 3D Euclidean distance is optimal. For Resnet specifically, we think we can achieve ground truth accuracy with more training image datasets and similarly for CellProfiler, as using more image datasets could help improve fine-tuning the values for the parameters that give higher cell count accuracy.
+
+**Finally, we think delving into cellular image analysis has been insightful for all of us and we were able to showcase and compare the performances of multiple softwares and techniques that are currently used in biomedical and cancer research. Of course, implementing these methods are not so straight-forward and they often lack in the analysis of 3D volumetric images. We came up with a way to count cells in 3D volumetric image by using their 2D image analysis capabilities but observed that much depended on fine-tuning variables and parameters of the algorithms they used. Machine learning algorithms like ResNet performed better in 2D slice images and seems promising. A key takeaway for us for this final project was that there is no easy solution to segment and count cells as seemingly simple as it sounds.**  
+
 
 # Presentation Recording
 [Link to Presentation Recording](https://github.com/weiyuzh/CS766-Project/blob/main/docs/Automated%20cell%20cluster%20detection%20and%20segmentation.mp4?raw=true)
