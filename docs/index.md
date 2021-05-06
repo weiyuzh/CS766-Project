@@ -125,7 +125,7 @@ Qualitatively, the multichannel model converged with less training and was gener
 - Training and evaluating different models with larger image datasets 
 
 # Presentation Recording
-<img src="./Automated cell cluster detection and segmentation.mp4">
+[Link to Presentation Recording](https://github.com/weiyuzh/CS766-Project/blob/main/docs/Automated%20cell%20cluster%20detection%20and%20segmentation.mp4?raw=true)
 
 # **References**
 1: [O'Brien J, Hayder H, Peng C. Automated Quantification and Analysis of Cell Counting Procedures Using ImageJ Plugins. J Vis Exp. 2016 Nov . doi:10.3791/54719. PMID: 27911396; PMCID: PMC5226253](http://europepmc.org/article/PMC/5226253).
