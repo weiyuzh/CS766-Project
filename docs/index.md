@@ -18,9 +18,7 @@ Group Members:
 [https://weiyuzh.github.io/CS766-Project/midterm.html](https://weiyuzh.github.io/CS766-Project/midterm.html)
 
 
-<div color="blue">
-# Motivation
-</div>
+# ***Motivation***
 Cell detection and counting is fundamental in biomedical and cancer research and it is regarded as the basis of image-based cellular research. Cell counting can be perfomed manually using a hemocytometer, flow cytometry or simply by hand-counting from images taken with the microscope. Manual hand-counting is the most affordable option, yet it is very time-consuming and is often subject to bias of the observer<sup>1</sup>. These drawbacks are often exarcebated by the complexity of cell structures that could lead to detection ambiguity and poor image quality for 3D volumetric images that is usually constrained by the specs of the microscope that is being used. 
 
 
@@ -43,12 +41,12 @@ Volumetric images are obtained by acquiring 2D images along the z-dimension or h
 As part of this project, we reviewed existing methods and explored image processing enhancements for cell detection, segmentation and counting. Our interest lied in the potential of developing a method that factors in the 3D nature of cells in the image processing and cluster analysis. 
 
 
-# Our Dataset
+# ***Our Dataset***
 The dataset we used for our project is a 3D volumetric image of neurons which is obtained by acquiring 2D image slices at different heights z, taken with a multiphoton microscope. For the image dataset shown, it had 187 cross sectional 2D images that were stacked together to create the 3D volumetric image.   
 <br>
 <img src="./images/dataset.png">
 
-# Method #1: The Graph-Cut Algorithm
+# ***Method #1: The Graph-Cut Algorithm***
 The first algorithm we explored was a graph-cut algorithm highlighted in a paper<sup>4</sup> from the 2012 IEEE conference. The main intuition is straightforward: cells typically exhibit an ellipsoid shape. We can exploit this pattern to guide our cut and at the same time help reduce computational complexity. The specific equation used is below. 
 <br>
 <img src="./images/graphcut/ellipsoid equation.png" width="600" height="35">
@@ -62,7 +60,7 @@ The results on an individual cell image can be seen below. The algorithm did wel
 
 In addition, this algorithm could only take 2D inputs, which defeated the purpose of making use of the z-stacks information for our analysis. Thus, we moved on to other methods that were more compatible with our dataset and aligned with our goals.
 
-# Method #2: CellProfiler
+# ***Method #2: CellProfiler***
 
 CellProfiler is an image analysis software for identifying and quantifying cells. This software was appealing to us for numerous reasons<sup>3</sup>:
 
@@ -86,7 +84,7 @@ These are the results of the euclidean distance formula. We overlayed the calcul
 
 Overall, the customized Cell Profiler pipeline combined with 3-D Euclidean distance measure works fairly well. However, one flaw in this pipeline is that overcounting still occurs. This is primarily due to Cell Profiler's watershed algorithm oversegmenting clusters of cells. For example, a hand counted ground truth cluster consisting of 8 cells could be overcounted to as much as double that original number. Each of these segmented cells then have a centroid present in the Euclidean calculation, making it difficult to tell which should be counted and which should be ignored. Tweaking Euclidean distance parameters could help alleviate this overcounting slightly, however changing the parameters too much negatively impacts the counting of cells that are either isolated or that are in smaller, loosely packed groups of only 2 to 3 cells. Further research and experimentation into Cell Profiler's Identify Primary Objects module would be key to reducing the over-segmentation problem as well as the over-counting problem that this pipeline faces.
 
-# Method #3: Machine Learning
+# ***Method #3: Machine Learning***
 
 ## Grayscale
 In addition to the above methods, we briefly investigated identifying cells using convolutional neural networks. We started simple, with 18 manually labelled images as the training data set and a ResNet-50 pipeline. Using TensorFlow and Google Colab, we first trained our model using grayscale images and evaluated our model against the full sample dataset. Shown below are all cells that were detected with > 50% confidence.
@@ -118,14 +116,14 @@ Qualitatively, the multichannel model converged with less training and was gener
 # Comparison
 <img src="./images/comparison.png">
 
-# Future Improvements
+# ***Future Improvements***
 
 - Fine-tuning and optimizing parameters of the CellProfiler Watershed algorithm
 - Optimizing thresholds for 3D Euclidean distance calculations
 - Training and evaluating different models with larger image datasets 
 
 
-# References
+# ***References***
 1: [O'Brien J, Hayder H, Peng C. Automated Quantification and Analysis of Cell Counting Procedures Using ImageJ Plugins. J Vis Exp. 2016 Nov . doi:10.3791/54719. PMID: 27911396; PMCID: PMC5226253](http://europepmc.org/article/PMC/5226253).
 
 2: [1.Schmitz, C. et al. Current automated 3D cell detection methods are not a suitable replacement for manual stereologic cell counting. Frontiers in Neuroanatomy 8, 27 (2014)](https://www.frontiersin.org/articles/10.3389/fnana.2014.00027/full).
