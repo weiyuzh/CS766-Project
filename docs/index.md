@@ -46,6 +46,8 @@ The dataset we used for our project is a 3D volumetric image of neurons which is
 <br>
 <img src="./images/dataset.png">
 
+[Raw Images](https://github.com/weiyuzh/CS766-Project/tree/main/docs/csv_analysis/original_images)
+
 # **Method #1: The Graph-Cut Algorithm**
 The first algorithm we explored was a graph-cut algorithm highlighted in a paper<sup>4</sup> from the 2012 IEEE conference. The main intuition is straightforward: cells typically exhibit an ellipsoid shape. We can exploit this pattern to guide our cut and at the same time help reduce computational complexity. The specific equation used is below. 
 <br>
@@ -122,6 +124,8 @@ Qualitatively, the multichannel model converged with less training and was gener
 - Optimizing thresholds for 3D Euclidean distance calculations
 - Training and evaluating different models with larger image datasets 
 
+# Presentation Recording
+<img src="./Automated cell cluster detection and segmentation.mp4">
 
 # **References**
 1: [O'Brien J, Hayder H, Peng C. Automated Quantification and Analysis of Cell Counting Procedures Using ImageJ Plugins. J Vis Exp. 2016 Nov . doi:10.3791/54719. PMID: 27911396; PMCID: PMC5226253](http://europepmc.org/article/PMC/5226253).
