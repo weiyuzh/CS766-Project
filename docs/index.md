@@ -119,6 +119,11 @@ Qualitatively, the multichannel model converged with less training and was gener
 
 # Future Improvements
 
+- Fine-tuning and optimizing parameters of the CellProfiler Watershed algorithm
+- Optimizing thresholds for 3D Euclidean distance calculations
+- Training and evaluating different models with larger image datasets 
+
+
 # References
 1: [O'Brien J, Hayder H, Peng C. Automated Quantification and Analysis of Cell Counting Procedures Using ImageJ Plugins. J Vis Exp. 2016 Nov . doi:10.3791/54719. PMID: 27911396; PMCID: PMC5226253](http://europepmc.org/article/PMC/5226253).
 
